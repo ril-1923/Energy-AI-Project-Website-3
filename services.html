@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - EcoPower Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/services.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top services-nav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-bolt text-success"></i> EcoPower
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-cta-services ms-2" href="contact.html">Get a Quote</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="services-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="services-title">Empowering the Future</h1>
+                    <p class="services-subtitle">Comprehensive renewable energy solutions tailored to your needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-grid py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-solar-panel"></i>
+                        </div>
+                        <h4>Solar Installation</h4>
+                        <p>Professional solar panel installation with cutting-edge photovoltaic technology for maximum efficiency.</p>
+                        <ul class="service-features">
+                            <li>25-year warranty</li>
+                            <li>Smart monitoring system</li>
+                            <li>Professional maintenance</li>
+                        </ul>
+                        <button class="btn btn-service-details" data-bs-toggle="modal" data-bs-target="#solarModal">Learn More</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <h4>Wind Power</h4>
+                        <p>Harness wind energy with state-of-the-art turbines designed for residential and commercial use.</p>
+                        <ul class="service-features">
+                            <li>High efficiency turbines</li>
+                            <li>Low maintenance design</li>
+                            <li>Grid integration support</li>
+                        </ul>
+                        <button class="btn btn-service-details" data-bs-toggle="modal" data-bs-target="#windModal">Learn More</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h4>Smart Grids</h4>
+                        <p>Intelligent energy distribution systems that optimize power flow and reduce waste.</p>
+                        <ul class="service-features">
+                            <li>Real-time monitoring</li>
+                            <li>Automated load balancing</li>
+                            <li>Demand response integration</li>
+                        </ul>
+                        <button class="btn btn-service-details" data-bs-toggle="modal" data-bs-target="#gridModal">Learn More</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-battery-full"></i>
+                        </div>
+                        <h4>Energy Storage</h4>
+                        <p>Advanced battery systems to store excess energy for use during peak demand periods.</p>
+                        <ul class="service-features">
+                            <li>Lithium-ion technology</li>
+                            <li>Backup power capability</li>
+                            <li>Mobile app control</li>
+                        </ul>
+                        <button class="btn btn-service-details" data-bs-toggle="modal" data-bs-target="#storageModal">Learn More</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h4>Home Energy Audit</h4>
+                        <p>Comprehensive analysis of your home's energy usage to identify optimization opportunities.</p>
+                        <ul class="service-features">
+                            <li>Thermal imaging inspection</li>
+                            <li>Efficiency recommendations</li>
+                            <li>Cost-benefit analysis</li>
+                        </ul>
+                        <button class="btn btn-service-details" data-bs-toggle="modal" data-bs-target="#auditModal">Learn More</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>Maintenance & Support</h4>
+                        <p>Ongoing maintenance and technical support to ensure optimal system performance.</p>
+                        <ul class="service-features">
+                            <li>24/7 monitoring</li>
+                            <li>Scheduled maintenance</li>
+                            <li>Emergency repairs</li>
+                        </ul>
+                        <button class="btn btn-service-details" data-bs-toggle="modal" data-bs-target="#maintenanceModal">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Calculator -->
+    <section class="roi-calculator py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="calculator-card">
+                        <h3 class="text-center mb-4">ROI Calculator</h3>
+                        <p class="text-center">Calculate your potential savings with renewable energy</p>
+                        <form id="roiForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Monthly Electric Bill ($)</label>
+                                        <input type="number" class="form-control" id="monthlyBill" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">System Size (kW)</label>
+                                        <input type="number" class="form-control" id="systemSize" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Installation Cost ($)</label>
+                                        <input type="number" class="form-control" id="installCost" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Federal Tax Credit (%)</label>
+                                        <input type="number" class="form-control" id="taxCredit" value="30" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-calculator">Calculate Savings</button>
+                        </form>
+                        <div id="roiResult" class="roi-result mt-4" style="display: none;">
+                            <div class="row text-center">
+                                <div class="col-md-4">
+                                    <h5>Annual Savings</h5>
+                                    <p class="result-value" id="annualSavings">$0</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5>Payback Period</h5>
+                                    <p class="result-value" id="paybackPeriod">0 years</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5>25-Year Savings</h5>
+                                    <p class="result-value" id="totalSavings">$0</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">What Our Clients Say</h2>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-10 mx-auto">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonial-card">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p>"EcoPower Solutions transformed our energy costs. We're saving over $200 monthly and our carbon footprint has decreased significantly."</p>
+                                    <div class="testimonial-author">
+                                        <strong>Sarah Johnson</strong>
+                                        <span>Homeowner, California</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p>"Professional installation and excellent customer service. The smart grid integration has optimized our entire facility's energy usage."</p>
+                                    <div class="testimonial-author">
+                                        <strong>Michael Chen</strong>
+                                        <span>Business Owner, Texas</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p>"The wind turbine installation exceeded our expectations. We're now energy independent and even selling back to the grid!"</p>
+                                    <div class="testimonial-author">
+                                        <strong>Emma Williams</strong>
+                                        <span>Farmer, Iowa</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Detail Modals -->
+    <div class="modal fade" id="solarModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Solar Installation</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://images.pexels.com/photos/433308/pexels-photo-433308.jpeg?auto=compress&cs=tinysrgb&w=800" class="img-fluid mb-3">
+                    <h6>Technical Specifications:</h6>
+                    <ul>
+                        <li>High-efficiency monocrystalline panels (20%+ efficiency)</li>
+                        <li>Micro-inverter technology for maximum power harvest</li>
+                        <li>25-year manufacturer warranty</li>
+                        <li>Smart monitoring system with mobile app</li>
+                        <li>Professional installation and commissioning</li>
+                    </ul>
+                    <h6>Benefits:</h6>
+                    <ul>
+                        <li>Reduce electricity bills by up to 90%</li>
+                        <li>Increase property value</li>
+                        <li>Federal tax credits available</li>
+                        <li>Net metering capabilities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="windModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Wind Power Systems</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://images.pexels.com/photos/9800029/pexels-photo-9800029.jpeg?auto=compress&cs=tinysrgb&w=800" class="img-fluid mb-3">
+                    <h6>Technical Specifications:</h6>
+                    <ul>
+                        <li>Horizontal axis turbines (1kW - 100kW capacity)</li>
+                        <li>Direct drive generators for reliability</li>
+                        <li>Advanced blade design for low wind speeds</li>
+                        <li>Grid-tie or off-grid configurations</li>
+                        <li>Remote monitoring and control</li>
+                    </ul>
+                    <h6>Applications:</h6>
+                    <ul>
+                        <li>Residential properties with adequate wind resources</li>
+                        <li>Commercial and industrial facilities</li>
+                        <li>Agricultural operations</li>
+                        <li>Remote locations and microgrids</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5><i class="fas fa-bolt text-success"></i> EcoPower Solutions</h5>
+                    <p>Leading the way in renewable energy solutions for a sustainable future.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6>Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Solar Installation</a></li>
+                        <li><a href="#">Wind Power</a></li>
+                        <li><a href="#">Smart Grids</a></li>
+                        <li><a href="#">Energy Storage</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6>Contact Info</h6>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Green Street, Eco City, EC 12345</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@ecopowersolutions.com</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 EcoPower Solutions. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light me-3">Privacy Policy</a>
+                    <a href="#" class="text-light">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/services.js"></script>
+</body>
+</html>
